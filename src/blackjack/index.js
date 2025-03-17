@@ -25,9 +25,6 @@ const divCartasComputadora = document.querySelector('#computadora-cartas');
 
 const puntosHTML = document.querySelectorAll('small');
 
-// turno de la computadora
-
-
 
 // Eventos
 btnPedir.addEventListener('click', () => {
@@ -38,7 +35,7 @@ btnPedir.addEventListener('click', () => {
     puntosJugador = puntosJugador + valorCarta( carta );
     puntosHTML[0].innerText = puntosJugador;
 
-     const imgCarta=crearCartaHtml(carta);
+    const imgCarta=crearCartaHtml(carta);
     divCartasJugador.append(imgCarta);
 
     if ( puntosJugador > 21 ) {
